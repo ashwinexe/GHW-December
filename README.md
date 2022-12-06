@@ -1,16 +1,18 @@
-# GHW-December
-Notes and resources for GHW December stream
+# GHW-December 🎅🎅
+Notes and resources for GHW December stream on **Deploying your first Kubernetes Cluster**
 
-## Setting up
+## Setting up 🖥️
 1. Install [Git](https://git-scm.com/)
-2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-3. Create an account on [Docker Hub](https://hub.docker.com/)
+2. Install [Node](https://nodejs.org/en/download/)
+3. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+4. Create an account on [Docker Hub](https://hub.docker.com/)
    1. Login to Docker Desktop with your docker account 
-4. Clone this repo 
+   2. Login to Docker CLI `docker login` ([more info](https://docs.docker.com/engine/reference/commandline/login/))
+5. Clone this repo 
    1. https: `https://github.com/ashwinexe/GHW-December.git`
    2. ssh: `git@github.com:ashwinexe/GHW-December.git`
    
-## Conterize your app
+## Conterize your app 🚀
 1. Check out the `Dockerfile` to understand what's happening
 2. Login to your docker account in your shell `docker login`
 3. Run `docker build -t <docker_username>/<image_name>:<version_number> .
@@ -43,7 +45,11 @@ Successfully tagged ashwinexe/ghw:1.0
    1. `docker run -p 8080:8080 ashwinexe/ghw:1.0`
    2. Check localhost:8080 in your browser
 
-## Enable Kuberenetes
+>> Fact:  8080:8080 means any request coming for port 8080 will be forwarded to service running on port 8080 inside your container. simply put  
+ `docker run -p Port for Outside World: Actual Port of service in container ashwinexe/ghw:1.0`
+
+
+## Enable Kuberenetes 🕹️
 There are several ways to run kubernetes locally on your machine. `Docker Desktop` is the easier way to get started 
 
 >> Still curious? Check out Kind, minikube and kubeadm which are also popular choice to run kubernetes locally
@@ -61,5 +67,7 @@ docker-desktop   Ready    control-plane   5d11h   v1.25.2
 
 Hurray! You got your own Kubernetes cluster running! 🥳
 
-## Resources
-- https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+## Extra Resources 💃
+- [Workshop Slides](https://docs.google.com/presentation/d/14xpFkT-ZIIsl-HyU1WMxmrKKzsK9WGdigfn0E72bQaU/edit?usp=sharing)
+- [Containerzie a node app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- Docker 
