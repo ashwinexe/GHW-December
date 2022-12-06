@@ -1,0 +1,23 @@
+{
+  "name": "ghw-december",
+  "version": "1.0.0",
+  "description": "packages for my website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwinexe/GHW-December.git"
+  },
+  "author": "ashwinexe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwinexe/GHW-December/issues"
+  },
+  "homepage": "https://github.com/ashwinexe/GHW-December#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
