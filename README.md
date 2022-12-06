@@ -70,4 +70,4 @@ Hurray! You got your own Kubernetes cluster running! 🥳
 ## Extra Resources 💃
 - [Workshop Slides](https://docs.google.com/presentation/d/14xpFkT-ZIIsl-HyU1WMxmrKKzsK9WGdigfn0E72bQaU/edit?usp=sharing)
 - [Containerzie a node app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- Docker 
+- [NodeJs Express tutorial](https://betterstack.com/community/guides/scaling-nodejs/build-nodejs-application-express-pug/)

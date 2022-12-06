@@ -1,14 +1,13 @@
-'use strict';
-var express = require('express'),
-app = express();
+const express = require('express');
+const path = require('path');
 
-app.set('views', 'views');
-app.set('view engine', 'pug');
+const app = express();
+const port = process.env.PORT || 8080;
 
+// File will go here
 app.get('/', function(req, res){
-    res.render('index.pug',{
-    });
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-app.listen(8080);
-module.exports.getApp = app
+app.listen(port);
+console.log('Server started at http://localhost:' + port);
