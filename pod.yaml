@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-pod
+  labels:
+    event: ghw
+spec:
+  containers:
+  - name: node
+    image: ashwinexe/ghw:1.0
+    ports:
+    - containerPort: 8080

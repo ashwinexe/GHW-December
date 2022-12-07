@@ -48,6 +48,9 @@ Successfully tagged ashwinexe/ghw:1.0
 >> Fact:  8080:8080 means any request coming for port 8080 will be forwarded to service running on port 8080 inside your container. simply put  
  `docker run -p Port for Outside World: Actual Port of service in container ashwinexe/ghw:1.0`
 
+6. Push  your image to dockerhub `docker push <username>/<image>:<version>
+
+You can use my deployed version if you wish so: `docker pull ashiwnexe/ghw:1.0`
 
 ## Enable Kuberenetes 🕹️
 There are several ways to run kubernetes locally on your machine. `Docker Desktop` is the easier way to get started 
@@ -67,7 +70,12 @@ docker-desktop   Ready    control-plane   5d11h   v1.25.2
 
 Hurray! You got your own Kubernetes cluster running! 🥳
 
+*So you containerized a Node.js web application into a container image and stored it on Docker Hub. You're about to deploy that application to your cluster inside a Kubernetes Pod.*
+
+
+
 ## Extra Resources 💃
 - [Workshop Slides](https://docs.google.com/presentation/d/14xpFkT-ZIIsl-HyU1WMxmrKKzsK9WGdigfn0E72bQaU/edit?usp=sharing)
 - [Containerzie a node app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 - [Hosting a simple static app using Express](https://www.digitalocean.com/community/tutorials/use-expressjs-to-deliver-html-files)
+- [ExpressJS tutorial](https://www.freecodecamp.org/news/express-explained-with-examples-installation-routing-middleware-and-more/#:~:text=Both%20req%20and%20res%20are,it%20gets%20an%20HTTP%20request.)
