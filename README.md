@@ -15,7 +15,7 @@ Notes and resources for GHW December stream on **Deploying your first Kubernetes
 ## Conterize your app 🚀
 1. Check out the `Dockerfile` to understand what's happening
 2. Login to your docker account in your shell `docker login`
-3. Run `docker build -t <docker_username>/<image_name>:<version_number> .
+3. Run `docker build -t <docker_username>/<image_name>:<version_number> .`
 4. It shoudl look like this:
 ```
    ➜  GHW-December git:(main) ✗ docker build -t ashwinexe/ghw:1.0 .
@@ -48,7 +48,8 @@ Successfully tagged ashwinexe/ghw:1.0
 >> Fact:  8080:8080 means any request coming for port 8080 will be forwarded to service running on port 8080 inside your container. simply put  
  `docker run -p Port for Outside World: Actual Port of service in container ashwinexe/ghw:1.0`
 
-6. Push  your image to dockerhub `docker push <username>/<image>:<version>
+6. Push  your image to dockerhub `docker push <username>/<image>:<version>` 
+   1. for eg: in my case it'd be `docker pull ashwinexe/ghw:1.0`
 
 You can use my deployed version if you wish so: `docker pull ashiwnexe/ghw:1.0`
 
@@ -72,6 +73,17 @@ Hurray! You got your own Kubernetes cluster running! 🥳
 
 *So you containerized a Node.js web application into a container image and stored it on Docker Hub. You're about to deploy that application to your cluster inside a Kubernetes Pod.*
 
+## Configure Kubenetes 
+- `kubectl apply -f pod.yaml` //applies Pod configuration
+- `kubectl apply -f service-local.yaml` //applies Service configuration to expose port locally
+- Verify service
+```
+  $ kubectl get svc
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP          9d
+svc-local    NodePort    10.96.122.250   <none>        8080:30000/TCP   7h33m
+```
+  Check the output at **localhost:30000** (or where NodePort is exposed in your `service-local.yaml` file)
 
 
 ## Extra Resources 💃
