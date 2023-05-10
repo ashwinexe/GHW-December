@@ -1,6 +1,11 @@
 # GHW-December 🎅🎅
 Notes and resources for GHW December stream on **Deploying your first Kubernetes Cluster**
 
+Watch the recording of all three parts here:
+- [Part 1](https://www.youtube.com/watch?v=nRe0GqRkah4&t=4133s&pp=ygU5R2xvYmFsIEhhY2sgV2VlazogRGVwbG95aW5nIFlvdXIgZmlyc3QgS3ViZXJuZXRlcyBDbHVzdGVy )
+- [Part 2]((https://www.youtube.com/live/nRe0GqRkah4?feature=share)
+- [Part 3]((https://www.youtube.com/live/N4kgxRERAZI?feature=share)
+
 ## Setting up 🖥️
 1. Install [Git](https://git-scm.com/)
 2. Install [Node](https://nodejs.org/en/download/)
